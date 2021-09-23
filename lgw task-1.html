@@ -1,0 +1,795 @@
+<html>
+    <head>
+        <title>task1</title>
+        <style>
+            *{
+                margin: 0px;
+                font-family:"Arial",
+                sans-serif
+        
+            }body{
+			background-color: black;
+			color: white;
+			}
+			
+			
+            section{
+                margin-bottom: 20px;
+            }
+            #section1{
+                width:100%;
+                height:auto;
+                background-color: red;
+            }
+            #section2{
+                width:100%;
+            }
+            #Welcome_to_zippy1{
+                display: flex;
+            }
+            #Welcome_to_zippy1 div img{
+                height: 200px;
+                width:auto;
+            }
+            #container{
+                width:80%;
+                background-color: rgb(85, 25, 25);
+                height:200px;
+                margin-left: 10%;
+                display: block;
+            }
+            #section2 h1{
+                width:auto;
+                padding-bottom: 40px;
+            }
+            #sec2_div1{
+                width: 70%;
+                text-align: left;
+                padding-top: 40px;
+                font-size: 170%;
+            }
+            #Welcome_to_zippy2{
+                display: flex;
+                justify-content: space-between;
+            }
+            #umbrella{
+                width: 50%;
+            }
+
+            .icondiv{
+                border-radius: 20px;
+                background-color: blueviolet;
+                color: white;
+                width: 40px;
+                height: 40px;
+                padding: 2.5px 2.5px 0 2.5px;
+            }
+
+            #welcome_to_zippy2>div{
+                width:150px;
+            }
+            #welcome_to_zippy2>div p{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            #welcome_to_zippy2>div div{
+                margin-top: 10px;
+            }
+            #welcome_to_zippy2>div a{
+                background-color: yellow;
+                height: 30px;
+                width: 80px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                font-size: 80%;
+                padding: 10px;
+            }
+
+            #welcome_to_zippy2>div a:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+
+            .div{
+                display:block;
+                width: 60%;
+                height: auto;
+                margin-left: 20%;
+            }
+            #section3{
+                width: 100%;
+                height: auto;
+                background-color: lightgray;
+            }
+
+            #sec3_div{
+                display: flex;
+            }
+            #sec3_div>div{
+                width:25%;
+                border: solid 1px black;
+            }
+
+            #sec3_div>div:hover{
+                background-color: yellow;
+            }
+            #sec3_div div section a:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+
+            #sec3_div>div div{
+                height: 300px;
+                width: 100%;
+
+            }
+
+            #section5{
+                width:100%;
+                background-color: blueviolet;
+                color: white;
+                height:auto;
+                box-sizing: border-box;
+            }
+            .carousel{
+                
+            }
+            .carousel-cell{
+                counter-increment: carousel-cell;
+            }
+            .carousel-cell:before{
+                display: block;
+                content: counter(carousel-cell);
+                color: white;
+            }
+            .carousel-cell div header div a{
+                color: white;
+            }
+            .carousel-cell div header div a:hover{
+                color: yellow;
+            }
+            #section1 .flickity-page-dots{
+                transform: translateY(-100px);
+            }
+
+            .carousel-cell div>div a{
+                padding: 10px;
+                font-size: 70%;
+                border: 1px black;
+                background-color: blueviolet;
+                color: white;
+                text-decoration: none;
+
+            }
+            .carousel-cell div>div a:hover{
+
+                background-color: yellow;
+                color: black;
+            }
+
+            .email-box{
+              height: 40px; 
+              width: 100%;
+            }
+            .tbox,.btn{
+              border: none;
+              outline: none;
+            }
+            .tbox{
+              width: 0px;
+              height:35px;
+              transition: 0.6s;
+            }
+            .email-box:hover > .tbox,.tbox:focus{
+              width: 600px;
+              padding: 10px;
+              height: 35px;
+            }
+            .btn{
+              background: yellow;
+              color: black;
+              font-size: 80%;
+              padding: 10px;
+              margin-right: 100px;
+              text-transform: uppercase;
+              margin-top: 50px;
+              cursor: pointer;
+              margin-bottom: 50px;
+            }
+            .sec9_a{
+                background-color: lightgray;
+                    height: 30px;
+                    width: auto;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+            }
+            .sec9_a:hover{
+                background-color: yellow;
+            }
+            #section10 div div form input{
+                height: 40px;
+                width: 302px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            #section10 div div form label{
+                font-weight: bold;
+
+            }
+            .launchcs{
+                text-decoration:none;
+                 color:black;
+                 background-color:white;
+                 border: solid 1px black;
+            }
+            .buy{
+                background-color: yellow;
+                    height: 30px;
+                    width: 80px;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+            }
+            .buy:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+            .sec6_contact{
+                opacity: 0;
+            }
+            .sec6_contact i{
+                color: white;
+                margin-left: 5px;
+            }
+            .sec6_contact:hover{
+                opacity: 1;
+                background-color: rgba(100,0,100,0.6);
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    </head>
+    <body>
+        <section id="section1">
+            <div class="carousel" data-flickity>
+                <section class="carousel-cell" style="height: 580px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px
+                padding-bottom:100px;
+                color: white;">
+                    <div style="height: 100%;
+                    width: 60%;
+                    margin-left: 20%;"><header style="display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;"><div style="font-size: 150%;
+                    font-weight: bold;">Zippy</div><div style="display: flex;
+                    justify-content: space-around;
+                    width: 70%; 
+                    color: white;"><a href="#" style="
+                    text-decoration: none;">HOME</a><a href="#section3" style="
+                    text-decoration: none;">PROJECTS</a><a href="#section4" style="
+                    text-decoration: none;">PRICING</a><a href="#section6" style="
+                    text-decoration: none;">TEAM</a><a href="#section9" style="
+                    text-decoration: none;">BLOG</a><a href="#section10" style="
+                    text-decoration: none;">CONTACT</a></div></header><br><br><br><br><br>
+                    <div align="left" style="width:70%;"><p style="font-size: 200%;">One page Promising To fill all your needs!</p><br><br>
+                        <p>Hi...! this is paragraph 2. i dont know what to write in it so im writing what i'm feeling right now my nect is paining so much ouch.....!</p><br><br>
+                        <a href="#">Learn More</a>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div></section>
+                <section class="carousel-cell" style="height: 580px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px
+                padding-bottom:100px;">
+                    <div style="height: 100%;
+                    width: 100%;" align="center"><p style="padding-top: 280px;
+                    color: white;">This is paragraph 2</p></div></section>
+                <section class="carousel-cell" align="center" style="height: 580px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px
+                padding-bottom:100px;">
+                    <div style="height: 100%;
+                    width: 100%;" align="center"><p style="padding-top: 280px;
+                    color: white;">This is paragraph 3</p></div></section>
+                <section class="carousel-cell" style="height: 580px;
+                width: 100%;
+                margin-top: 0px;
+                margin-bottom: 0px
+                padding-bottom:100px;">
+                    <div style="height: 100%;
+                    width: 100%;"><p style="padding-top: 280px;
+                    color: white;" align="center">This is paragraph 4</p></div></section>
+            </div>
+        </section>
+        <section id="section2" align="center">
+            <h1 style="font-size: 300%;
+            margin-bottom: 10px;
+            margin-top: 30px;">Welcome to zippy</h1>
+            <div class="container">
+                <div class="div" id="Welcome_to_zippy1" align="center">
+                    <div align="left" id="sec2_div1">
+                        <p>
+                            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sol- licitudin, lorem quis bibendum auctor.
+                        </p>
+                    </div>
+                    <div align="right" id="umbrella">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHQZnghmIdojEKP5jMemcr8mCBohDXr5fCMw&usqp=CAU">
+                    </div>
+                </div><br><br>
+                <div class="div" id="Welcome_to_zippy2">
+                    <div align="center">
+                       <div class="icondiv"><i class="fa fa-bell fa-2x"></i></div>
+                        <p style="margin-bottom: 20px;">its just a testing website so its text 1</p>
+                        <a href=""> Learn More</a>
+                    </div>
+                    <div align="center">
+                        <div class="icondiv"><i class="fa fa-envelope-square fa-2x"></i></div>
+                        <p style="margin-bottom: 20px;">its just a testing website so its text 2</p>
+                        <a href=""> Learn More</a>
+                     </div>
+                    <div align="center">
+                        <div class="icondiv"><i class="fa fa-envelope-square fa-2x"></i></div>
+                        <p style="margin-bottom: 20px;">its just a testing website so its text 3</p>
+                        <a href=""> Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h1 align="center" style="font-size: 300%;
+            margin-bottom: 30px;
+            margin-top: 40px;">Projects</h1>
+        <section id="section3" align="center">
+            <div id="sec3_div">
+
+            </div>
+        </section>
+        <section id="section4" align="center">
+            <h1 style="font-size: 300%;
+             margin-bottom: 30px;
+			 
+             margin-top: 40px;">Pricing Table</h1>
+            <div class="container"t7>
+                <div class="div" style="display: flex;
+                background-color: lightgrey;
+                justify-content: space-between;
+				color:black;
+                margin-top: 20px;">
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;"><h3>Standard Plan</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">Free</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;"> This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="buy" style="font-size: 80%;
+                    padding: 10px;">Buy</a></div>
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;"><h3>Business Plan</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">19$/Month</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;">This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="buy" style="
+                    font-size: 80%;
+                    padding: 10px;">Buy</a></div>
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;"><h3>Premium PLan</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">25$/Month</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;">This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="buy" style="font-size: 80%;
+                    padding: 10px;">Buy</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="section5" align="center">
+            <h1 style="font-size: 300%;
+             margin-bottom: 10px;
+             padding-top: 30px;">Video Projects</h1>
+            <div class="carousel" data-flickity>
+                <iframe class="carousel-cell" style=" width: 60%;
+                height: 400px;
+                margin-right: 30px;
+                border-radius: 5px;
+                background-color: black;
+                margin-top: 30px;
+                margin-bottom: 80px;"   
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <iframe class="carousel-cell" style=" width: 60%;
+                height: 400px;
+                margin-right: 30px;
+                border-radius: 5px;
+                background-color: black;
+                margin-top: 30px;
+                margin-bottom: 80px;"   
+                src="https://www.youtube.com/embed/BQ3mrM5-8L8">
+                </iframe>
+                <iframe class="carousel-cell" style=" width: 60%;
+                height: 400px;
+                margin-right: 30px;
+                border-radius: 5px;
+                background-color: black;
+                margin-top: 30px;
+                margin-bottom: 80px;"   
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                <iframe class="carousel-cell" style=" width: 60%;
+                height: 400px;
+                margin-right: 30px;
+                border-radius: 5px;
+                background-color: black;
+                margin-top: 30px;
+                margin-bottom: 80px;"   
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+        </section>
+        <section id="section6" align="center">
+            <h1 style="font-size: 300%;
+             margin-bottom: 30px;
+             margin-top: 40px;">Zippy Team</h1>
+            <div class="div">
+                <div id="sec6_div1" style="display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 30px;"></div>
+                <div id="sec6_div2" style="display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 30px;"></div>
+            </div>
+        </section>
+        <section id="section7" align="center">
+            <h1 style="font-size: 300%;
+             margin-bottom: 30px;
+             margin-top: 40px;">Life in Zippy</h1>
+            <div class="div" style="margin-top: 20px;">
+                <div id="sec7_div1" style="height: 350px;
+                width: 100%;
+                "></div>
+                <div id="sec7_div2" style="width: 100%;
+                height: auto;
+                justify-content: space-between;
+                display: flex;
+                margin-top: 10px;"> 
+                </div>
+            </div>
+        </section>
+        <section id="section8" align="center" style=" background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPxwLERM5wX24nUguecN678Jys_Et7jZvcMQ&usqp=CAU);
+            background-size: cover;
+            background-position: center;">
+            <h1 style="font-size: 300%;
+            color: white;
+            padding-top: 50px;">News Letter Signup</h1>
+            <div class="div" align="right">
+                <div class="email-box" align="right">
+                <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
+                <button class="btn" type="button" name="button">sing up</button>
+              </div>
+              <button class="btn" type="button" name="button" style="color: white;
+                padding: 10px;
+                font-size: 80%;
+                background-color: blueviolet;">sing up</button>
+            </div>
+        </section>
+        <section id="section9" align="center">
+            <h1 style="font-size: 300%;
+             margin-bottom: 30px;
+             margin-top: 40px;">Blog</h1>
+            <div class="div" style="margin-top: 30px;
+            padding-bottom: 120px;
+			color: black;">
+                <div id="sec9_div1" style="width: 100%;
+                height: 150px;
+                display: flex;">
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;">
+                    <div style="height: auto;
+                    width: 80%;
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTiSxuijnlHFHBB5VwZPx1kRLZkiwLgn5L3A&usqp=CAU);
+                    background-size: 100% 100%;
+                    margin-left: 10%;
+                    margin-bottom: 10px;"></div>
+                    <h3>Blog No. 1</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">16 Sep 2021</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;"> This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="sec9_a" style="font-size: 80%;
+                    padding: 10px;">Read MOre</a></div>
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;">
+                    <div style="height:auto;
+                    width: 80%;
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvP2zWu9kQ7s6JImKKl0Dnwz0dLSPtR1767Q&usqp=CAU);
+                    background-size: 100% 100%;
+                    margin-left: 10%;
+                    margin-bottom: 10px;"></div>
+                    <h3>Blog No. 2</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">16 Sep 2021</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;">This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="sec9_a" style="font-size: 80%;
+                    padding: 10px;">Read MOre</a></div>
+                    <div style="height: 200px;
+                    width: 33%;
+                    background-color: white;">
+                    <div style="height: auto;
+                    width: 80%;
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRFSyKYNEzbASfs2-azVgDwzmhkuFCuygJA&usqp=CAU);
+                    background-size: 100% 100%;
+                    margin-left: 10%;
+                    margin-bottom: 10px;"></div>
+                    <h3>Blog No. 3</h3>
+                    <h4 style="color: lightgrey;
+                    font-size: 70%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;">16 Sep 2021</h4>
+                    <p style="padding-right: 20px;
+                    padding-left: 20px;
+                    margin-bottom: 15px;">This is just a testing purpose text, you'll not get any information over here. ThankYou</p>
+                    <a href="" class="sec9_a" style="font-size: 80%;
+                    padding: 10px;">Read MOre</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="section10" style="height: auto;" align="center">
+            <div style="display: flex;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=&amp;t=k&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fnfgo.com/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:615px;}.gmap_iframe {height:615px!important;}</style></div>
+                <div style="height: auto;
+                width: 50%;
+                background-color: yellow;
+                padding-left: 50px;
+                padding-bottom: 50px;" align="left">
+                    <h1 style="font-size: 300%;
+                     margin-bottom: 30px;
+                     margin-top: 40px;">Contact</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label><br>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone:</label><br>
+                            <input type="phone" name="name" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Email:</label><br>
+                            <input type="email" name="name" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Message:</label><br>
+                            <textarea name="message" id="message" cols="40" rows="10" style="margin-top: 5px;"></textarea>
+                        </div>
+                        <button style="height: 40px;
+                        width: 302px;
+                        color: white;
+                        background-color: blueviolet;
+                        margin-top: 20px;">send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div style="width: 60%;
+            margin-left: 20%;
+            display: flex;
+            justify-content: space-between;">
+                <div style="width: 30%"><h2>Office address</h2><br><p>534 jh/B43 Niralanagar Chhatisghar NewYork.</p></div>
+                <div style="width: 30%"><h2>Follow us</h2><br><div style="display: flex;
+                width: 100%;
+                padding-left: 10px;" align="center"><a><i class="fa fa-instagram fa-2x"></i></a><a><i class="fa fa-github fa-2x"></i></a><a><i class="fa fa-linkedin fa-2x"></i></a></div><div style="display: flex;
+                padding-left: 10px;
+                width: 100%;" align="center"><a><i class="fa fa-twitter fa-2x"></i></a><a><i class="fa fa-snapchat fa-2x"></i></a><a><i class="fa fa-facebook fa-2x"></i></a></div></div>
+                <div style="width: 30%"><h2>Contact us</h2><br><p>+123456789<br>Prakhar@task1<br>prakhar@zippy.com</p></div> 
+            </div>
+        </footer>
+
+        <br><br><br><p style="width: 100%;
+        text-align: center;" hidden="container">Copyright © 2021 | All Rights Reserved. <br>This Website is Designed &amp; made by <b>Prakhar Mishra</b>.</p> <br><br>
+
+        <script type="text/javascript">
+            let img=0;
+            let sec3 = [{
+                 img : "https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg",
+                 head: "Project1",
+                 text : "its just a testing website so its text 1",
+             },{
+                 img : "https://images.unsplash.com/photo-1572177812156-58036aae439c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+                 head: "Project2",
+                 text : "its just a testing website so its text 2",
+             },{
+                 img : "https://thumbs.dreamstime.com/b/business-team-to-calculate-financial-information-invest-new-projects-manager-meeting-euing-smart-phone-laptop-digital-167938232.jpg",
+                 head: "Project3",
+                 text : "its just a testing website so its text 3",
+             },{
+                 img : "data:image/jpeg;base64,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",
+                 head: "Project4",
+                 text : "its just a testing website so its text 4",
+             }]
+             let str="";
+
+             let sec6 = [{
+                 img : "https://media.istockphoto.com/photos/security-guard-closing-gate-picture-id88621517?k=20&m=88621517&s=612x612&w=0&h=BoO2cHD_EeKepWtubB3vrB1RlfaC-eF1_-UJDNTNmNQ=",
+                 name: "Prakhar Mishra",
+                 occ : "gate keeper",
+             },{
+                 img : "data:image/jpeg;base64,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",
+                 name: "Vishal Sharma",
+                 occ : "web developer",
+             },{
+                 img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbKAhSwRQ1EL5gw9NOEbSGuE1DAzeXDI_O-A&usqp=CAU",
+                 name: "Shikhar Saxena",
+                 occ : "Tester",
+             },{
+                 img : "https://media.istockphoto.com/photos/latin-freelance-coding-expert-using-computer-at-desk-picture-id1179581978?k=20&m=1179581978&s=612x612&w=0&h=p660GloupSPd7iYXhnBHjy18KZv0QXY3Hp9AKHkMviQ=",
+                 name: "Rahul Raj",
+                 occ : "Graphics Designer",
+             },{
+                 img : "https://media.istockphoto.com/photos/portrait-of-a-curios-positive-and-smiling-it-engineer-standing-in-the-picture-id802301462?k=20&m=802301462&s=612x612&w=0&h=p2hA6C4mvuvI5Prgms0TWCCDz-VZt3QOzYmhrNTLqY4=",
+                 name: "Ravi Sharma",
+                 occ : "Game Developer",
+             },{
+                 img : "https://st.depositphotos.com/1011643/2348/i/600/depositphotos_23483051-stock-photo-modern-businesswoman-holding-tablet-computer.jpg",
+                 name: "Lara Biswas",
+                 occ : "Content Creater",
+             }]
+             let str2="";
+             let sec7 = [{
+                 img : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNqQ4p8mn4Oc6T93RZjsMqRtCv3kS7YeqZUZyhebOxQLMnqxtsEGPbahhwznLCB3v9fA&usqp=CAU",
+             },{
+                 img : "https://image.shutterstock.com/image-vector/group-office-workers-sitting-desks-260nw-1402573874.jpg",
+             },{
+                 img : "https://image.shutterstock.com/image-photo/multiethnic-group-happy-business-people-260nw-627650747.jpg",
+             },{
+                 img : "https://s3.amazonaws.com/media.greatplacetowork.com/images/photos/478110.jpg",
+             },{
+                 img : "https://images.unsplash.com/photo-1551434678-e076c223a692?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9mZmljZSUyMGVtcGxveWVlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+             },{
+                 img : "https://image.shutterstock.com/image-photo/multiethnic-group-happy-business-people-260nw-627650747.jpg",
+             }];
+             let str3=`<button onclick="changeimglft()" style="height:70px;
+                width:40px;
+                font-size:300%;
+                font-weight:bold;
+                background-color: #252627;
+                color:white;
+                padding-top:10px;
+                padding-bottom:0px;
+                align:center;"><</button>`;
+
+             for(let i = 0; i<4;i++){
+                 str += `<div>
+                 <div style = "background-image: url(${sec3[i].img});
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 background-position:center;"></div>
+                 <section style="margin:30px;
+                 text-align:left;
+                 font-size:130%;">
+                 <p>${sec3[i].head}</p>
+                 <p>${sec3[i].text}</p><br>
+                 <a href="#" style="padding: 7px;
+                 " class="launchcs">Launch Case Study</a>
+                 </section>
+                 </div>`
+             };
+             document.getElementById("sec3_div").innerHTML = str;
+
+             for(let i = 0; i<3;i++){
+                str2+= `<div><div style="background-image: url(${sec6[i].img});
+                background-repeat:no-repeat;
+                background-size: cover;
+                background-position:center;
+                width:150px;
+                height:150px;
+                border-radius:75px;
+                align-self:center;"><div style="height:100%;
+                width:100%;
+                border-radius:50%;
+                justify-content:space-around;" class="sec6_contact" align="center"><br><br><br><i class="fa fa-instagram fa-2x"></i><i class="fa fa-envelope-square fa-2x"></i><i class="fa fa-linkedin fa-2x"></i></div></div>
+                <p style="font-size:120%;
+                font-weight:bold;
+                margin-top:10px;">${sec6[i].name}</p>
+                <div style="color: grey;
+                font-size:80%;">${sec6[i].occ}</div></div>`
+             }
+             document.getElementById("sec6_div1").innerHTML = str2;
+             str2 ="";
+             for(let i = 3; i<6;i++){
+                str2+= `<div><div style="background-image: url(${sec6[i].img});
+                background-repeat:no-repeat;
+                background-size: cover;
+                background-position:center;
+                width:150px;
+                height:150px;
+                border-radius:75px;"><div style="height:100%;
+                width:100%;
+                border-radius:50%;
+                justify-content:space-around;" class="sec6_contact" align="center"><br><br><br><i class="fa fa-instagram fa-2x"></i><i class="fa fa-envelope-square fa-2x"></i><i class="fa fa-linkedin fa-2x"></i></div></div>
+                <p style="font-size:120%;
+                font-weight:bold;
+                margin-top:10px;">${sec6[i].name}</p>
+                <div style="color: grey;
+                font-size:80%;">${sec6[i].occ}</div></div>`
+             }
+             document.getElementById("sec6_div2").innerHTML = str2;
+             for(let i = 0; i<6;i++){
+                str3+=`<img src="${sec7[i].img}" style="height:70px;
+                width:90px;">`
+             }
+             str3+=`<button onclick="changeimgrgt()" style="height:70px;
+                width:40px;
+                font-size:300%;
+                font-weight:bold;
+                background-color: #252627;
+                color:white;
+                padding-top:10px;
+                padding-bottom:0px;
+                align:center;">></button>`;
+             document.getElementById("sec7_div2").innerHTML = str3;
+
+             document.getElementById("sec7_div1").innerHTML = `<div style="height:100%;
+                width:100%;
+                background-image:url(${sec7[img].img});
+                background-position:center;
+                background-repeat: no-repeat;
+                background-size: cover;"></div>`;
+
+             function changeimgrgt(){
+                if(img==5)
+                    img=0;
+                img++;
+                document.getElementById("sec7_div1").innerHTML = `<div style="height:100%;
+                width:100%;
+                background-image:url(${sec7[img].img});
+                background-repeat: no-repeat;
+                 background-size: 100% 100%;"></div>`;
+             }
+             function changeimglft(){
+                
+                if(img==0)
+                    img=5;
+                img--;
+                document.getElementById("sec7_div1").innerHTML = `<div style="height:100%;
+                width:100%;
+                background-image:url(${sec7[img].img});
+                background-repeat: no-repeat;
+                background-size: 100% 100%;"></div>`;
+             }
+        </script>
+    </body>
+</html>
